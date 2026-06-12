@@ -206,119 +206,119 @@ export class BlendingParameters {
 
   private static _translateBlendingFactorSrc(factor: BlendingType): BlendingFactorSrc {
     switch (factor) {
-      case BlendingType.ConstantAlpha:
-        return BlendingFactorSrc.ConstantAlpha;
+    case BlendingType.ConstantAlpha:
+      return BlendingFactorSrc.ConstantAlpha;
 
-      case BlendingType.ConstantColor:
-        return BlendingFactorSrc.ConstantColor;
+    case BlendingType.ConstantColor:
+      return BlendingFactorSrc.ConstantColor;
 
-      case BlendingType.DstAlpha:
-        return BlendingFactorSrc.DstAlpha;
+    case BlendingType.DstAlpha:
+      return BlendingFactorSrc.DstAlpha;
 
-      case BlendingType.DstColor:
-        return BlendingFactorSrc.DstColor;
+    case BlendingType.DstColor:
+      return BlendingFactorSrc.DstColor;
 
-      case BlendingType.One:
-        return BlendingFactorSrc.One;
+    case BlendingType.One:
+      return BlendingFactorSrc.One;
 
-      case BlendingType.OneMinusConstantAlpha:
-        return BlendingFactorSrc.OneMinusConstantAlpha;
+    case BlendingType.OneMinusConstantAlpha:
+      return BlendingFactorSrc.OneMinusConstantAlpha;
 
-      case BlendingType.OneMinusConstantColor:
-        return BlendingFactorSrc.OneMinusConstantColor;
+    case BlendingType.OneMinusConstantColor:
+      return BlendingFactorSrc.OneMinusConstantColor;
 
-      case BlendingType.OneMinusDstAlpha:
-        return BlendingFactorSrc.OneMinusDstAlpha;
+    case BlendingType.OneMinusDstAlpha:
+      return BlendingFactorSrc.OneMinusDstAlpha;
 
-      case BlendingType.OneMinusDstColor:
-        return BlendingFactorSrc.OneMinusDstColor;
+    case BlendingType.OneMinusDstColor:
+      return BlendingFactorSrc.OneMinusDstColor;
 
-      case BlendingType.OneMinusSrcAlpha:
-        return BlendingFactorSrc.OneMinusSrcColor;
+    case BlendingType.OneMinusSrcAlpha:
+      return BlendingFactorSrc.OneMinusSrcColor;
 
-      case BlendingType.SrcAlpha:
-        return BlendingFactorSrc.SrcAlpha;
+    case BlendingType.SrcAlpha:
+      return BlendingFactorSrc.SrcAlpha;
 
-      case BlendingType.SrcAlphaSaturate:
-        return BlendingFactorSrc.SrcAlphaSaturate;
+    case BlendingType.SrcAlphaSaturate:
+      return BlendingFactorSrc.SrcAlphaSaturate;
 
-      case BlendingType.SrcColor:
-        return BlendingFactorSrc.SrcColor;
+    case BlendingType.SrcColor:
+      return BlendingFactorSrc.SrcColor;
 
-      default:
-      case BlendingType.Zero:
-        return BlendingFactorSrc.Zero;
+    default:
+    case BlendingType.Zero:
+      return BlendingFactorSrc.Zero;
     }
   }
 
   private static _translateBlendingFactorDest(factor: BlendingType): BlendingFactorDest {
     switch (factor) {
-      case BlendingType.ConstantAlpha:
-        return BlendingFactorDest.ConstantAlpha;
+    case BlendingType.ConstantAlpha:
+      return BlendingFactorDest.ConstantAlpha;
 
-      case BlendingType.ConstantColor:
-        return BlendingFactorDest.ConstantColor;
+    case BlendingType.ConstantColor:
+      return BlendingFactorDest.ConstantColor;
 
-      case BlendingType.DstAlpha:
-        return BlendingFactorDest.DstAlpha;
+    case BlendingType.DstAlpha:
+      return BlendingFactorDest.DstAlpha;
 
-      case BlendingType.DstColor:
-        return BlendingFactorDest.DstColor;
+    case BlendingType.DstColor:
+      return BlendingFactorDest.DstColor;
 
-      case BlendingType.One:
-        return BlendingFactorDest.One;
+    case BlendingType.One:
+      return BlendingFactorDest.One;
 
-      case BlendingType.OneMinusConstantAlpha:
-        return BlendingFactorDest.OneMinusConstantAlpha;
+    case BlendingType.OneMinusConstantAlpha:
+      return BlendingFactorDest.OneMinusConstantAlpha;
 
-      case BlendingType.OneMinusConstantColor:
-        return BlendingFactorDest.OneMinusConstantColor;
+    case BlendingType.OneMinusConstantColor:
+      return BlendingFactorDest.OneMinusConstantColor;
 
-      case BlendingType.OneMinusDstAlpha:
-        return BlendingFactorDest.OneMinusDstAlpha;
+    case BlendingType.OneMinusDstAlpha:
+      return BlendingFactorDest.OneMinusDstAlpha;
 
-      case BlendingType.OneMinusDstColor:
-        return BlendingFactorDest.OneMinusDstColor;
+    case BlendingType.OneMinusDstColor:
+      return BlendingFactorDest.OneMinusDstColor;
 
-      case BlendingType.OneMinusSrcAlpha:
-        return BlendingFactorDest.OneMinusSrcAlpha;
+    case BlendingType.OneMinusSrcAlpha:
+      return BlendingFactorDest.OneMinusSrcAlpha;
 
-      case BlendingType.OneMinusSrcColor:
-        return BlendingFactorDest.OneMinusSrcColor;
+    case BlendingType.OneMinusSrcColor:
+      return BlendingFactorDest.OneMinusSrcColor;
 
-      case BlendingType.SrcAlpha:
-        return BlendingFactorDest.SrcAlpha;
+    case BlendingType.SrcAlpha:
+      return BlendingFactorDest.SrcAlpha;
 
-      case BlendingType.SrcAlphaSaturate:
-        return BlendingFactorDest.SrcAlphaSaturate;
+    case BlendingType.SrcAlphaSaturate:
+      return BlendingFactorDest.SrcAlphaSaturate;
 
-      case BlendingType.SrcColor:
-        return BlendingFactorDest.SrcColor;
+    case BlendingType.SrcColor:
+      return BlendingFactorDest.SrcColor;
 
-      default:
-      case BlendingType.Zero:
-        return BlendingFactorDest.Zero;
+    default:
+    case BlendingType.Zero:
+      return BlendingFactorDest.Zero;
     }
   }
 
   private static _translateEquation(equation: BlendingEquation): BlendEquationMode {
     switch (equation) {
-      default:
-      case BlendingEquation.Inherit:
-      case BlendingEquation.Add:
-        return BlendEquationMode.FuncAdd;
+    default:
+    case BlendingEquation.Inherit:
+    case BlendingEquation.Add:
+      return BlendEquationMode.FuncAdd;
 
-      case BlendingEquation.Min:
-        return BlendEquationMode.Min;
+    case BlendingEquation.Min:
+      return BlendEquationMode.Min;
 
-      case BlendingEquation.Max:
-        return BlendEquationMode.Max;
+    case BlendingEquation.Max:
+      return BlendEquationMode.Max;
 
-      case BlendingEquation.Subtract:
-        return BlendEquationMode.FuncSubtract;
+    case BlendingEquation.Subtract:
+      return BlendEquationMode.FuncSubtract;
 
-      case BlendingEquation.ReverseSubtract:
-        return BlendEquationMode.FuncReverseSubtract;
+    case BlendingEquation.ReverseSubtract:
+      return BlendEquationMode.FuncReverseSubtract;
     }
   }
 }

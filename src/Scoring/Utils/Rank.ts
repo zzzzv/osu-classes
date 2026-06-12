@@ -11,10 +11,10 @@ export function calculate(scoreInfo: IScoreInfo): keyof typeof ScoreRank {
   if (!scoreInfo.passed) return 'F';
 
   switch (scoreInfo.rulesetId) {
-    case 0: return calculateOsuRank(scoreInfo);
-    case 1: return calculateTaikoRank(scoreInfo);
-    case 2: return calculateCatchRank(scoreInfo);
-    case 3: return calculateManiaRank(scoreInfo);
+  case 0: return calculateOsuRank(scoreInfo);
+  case 1: return calculateTaikoRank(scoreInfo);
+  case 2: return calculateCatchRank(scoreInfo);
+  case 3: return calculateManiaRank(scoreInfo);
   }
 
   return 'F';

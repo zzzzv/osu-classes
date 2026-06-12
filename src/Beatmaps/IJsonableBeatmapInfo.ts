@@ -1,9 +1,9 @@
 import { IBeatmapInfo } from './IBeatmapInfo';
 
 export type JsonableBeatmapInfo = Omit<
-// eslint-disable-next-line @typescript-eslint/indent
+// eslint-disable-next-line indent
   IBeatmapInfo,
-// eslint-disable-next-line @typescript-eslint/indent
+// eslint-disable-next-line indent
   'ruleset' | 'mods' | 'rawMods' | 'deletedAt' | 'updatedAt'
 >;
 

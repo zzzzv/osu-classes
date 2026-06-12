@@ -65,29 +65,29 @@ export class HitWindows {
       const value = DifficultyRange.map(difficulty, range.min, range.average, range.max);
 
       switch (range.result) {
-        case HitResult.Miss:
-          this._miss = value;
-          break;
+      case HitResult.Miss:
+        this._miss = value;
+        break;
 
-        case HitResult.Meh:
-          this._meh = value;
-          break;
+      case HitResult.Meh:
+        this._meh = value;
+        break;
 
-        case HitResult.Ok:
-          this._ok = value;
-          break;
+      case HitResult.Ok:
+        this._ok = value;
+        break;
 
-        case HitResult.Good:
-          this._good = value;
-          break;
+      case HitResult.Good:
+        this._good = value;
+        break;
 
-        case HitResult.Great:
-          this._great = value;
-          break;
+      case HitResult.Great:
+        this._great = value;
+        break;
 
-        case HitResult.Perfect:
-          this._perfect = value;
-          break;
+      case HitResult.Perfect:
+        this._perfect = value;
+        break;
       }
     }
   }
@@ -118,26 +118,26 @@ export class HitWindows {
    */
   windowFor(result: HitResult): number {
     switch (result) {
-      case HitResult.Perfect:
-        return this._perfect;
+    case HitResult.Perfect:
+      return this._perfect;
 
-      case HitResult.Great:
-        return this._great;
+    case HitResult.Great:
+      return this._great;
 
-      case HitResult.Good:
-        return this._good;
+    case HitResult.Good:
+      return this._good;
 
-      case HitResult.Ok:
-        return this._ok;
+    case HitResult.Ok:
+      return this._ok;
 
-      case HitResult.Meh:
-        return this._meh;
+    case HitResult.Meh:
+      return this._meh;
 
-      case HitResult.Miss:
-        return this._miss;
+    case HitResult.Miss:
+      return this._miss;
 
-      default:
-        throw new Error('Unknown enum member');
+    default:
+      throw new Error('Unknown enum member');
     }
   }
 
@@ -167,9 +167,9 @@ export class HitWindows {
 
     isHitResultAllowed(result: HitResult): boolean {
       switch (result) {
-        case HitResult.Perfect:
-        case HitResult.Miss:
-          return true;
+      case HitResult.Perfect:
+      case HitResult.Miss:
+        return true;
       }
 
       return false;

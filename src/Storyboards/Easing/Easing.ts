@@ -173,41 +173,41 @@ export const outPow10 = clampEase((p: number): number => {
 
 export function getEasingFn(easing: EasingType): EasingFn {
   switch (easing) {
-    case EasingType.In:
-    case EasingType.InQuad: return inQuad;
-    case EasingType.Out:
-    case EasingType.OutQuad: return outQuad;
-    case EasingType.InOutQuad: return inOutQuad;
-    case EasingType.InCubic: return inCubic;
-    case EasingType.OutCubic: return outCubic;
-    case EasingType.InOutCubic: return inOutCubic;
-    case EasingType.InQuart: return inQuart;
-    case EasingType.OutQuart: return outQuart;
-    case EasingType.InOutQuart: return inOutQuart;
-    case EasingType.InQuint: return inQuint;
-    case EasingType.OutQuint: return outQuint;
-    case EasingType.InOutQuint: return inOutQuint;
-    case EasingType.InSine: return inSine;
-    case EasingType.OutSine: return outSine;
-    case EasingType.InOutSine: return inOutSine;
-    case EasingType.InExpo: return inExpo;
-    case EasingType.OutExpo: return outExpo;
-    case EasingType.InOutExpo: return inOutExpo;
-    case EasingType.InCirc: return inCirc;
-    case EasingType.OutCirc: return outCirc;
-    case EasingType.InOutCirc: return inOutCirc;
-    case EasingType.InElastic: return inElastic;
-    case EasingType.OutElastic: return outElastic;
-    case EasingType.OutElasticHalf: return outElasticHalf;
-    case EasingType.OutElasticQuarter: return outElasticQuarter;
-    case EasingType.InOutElastic: return inOutElastic;
-    case EasingType.InBack: return inBack;
-    case EasingType.OutBack: return outBack;
-    case EasingType.InOutBack: return inOutBack;
-    case EasingType.InBounce: return inBounce;
-    case EasingType.OutBounce: return outBounce;
-    case EasingType.InOutBounce: return inOutBounce;
-    case EasingType.OutPow10: return outPow10;
+  case EasingType.In:
+  case EasingType.InQuad: return inQuad;
+  case EasingType.Out:
+  case EasingType.OutQuad: return outQuad;
+  case EasingType.InOutQuad: return inOutQuad;
+  case EasingType.InCubic: return inCubic;
+  case EasingType.OutCubic: return outCubic;
+  case EasingType.InOutCubic: return inOutCubic;
+  case EasingType.InQuart: return inQuart;
+  case EasingType.OutQuart: return outQuart;
+  case EasingType.InOutQuart: return inOutQuart;
+  case EasingType.InQuint: return inQuint;
+  case EasingType.OutQuint: return outQuint;
+  case EasingType.InOutQuint: return inOutQuint;
+  case EasingType.InSine: return inSine;
+  case EasingType.OutSine: return outSine;
+  case EasingType.InOutSine: return inOutSine;
+  case EasingType.InExpo: return inExpo;
+  case EasingType.OutExpo: return outExpo;
+  case EasingType.InOutExpo: return inOutExpo;
+  case EasingType.InCirc: return inCirc;
+  case EasingType.OutCirc: return outCirc;
+  case EasingType.InOutCirc: return inOutCirc;
+  case EasingType.InElastic: return inElastic;
+  case EasingType.OutElastic: return outElastic;
+  case EasingType.OutElasticHalf: return outElasticHalf;
+  case EasingType.OutElasticQuarter: return outElasticQuarter;
+  case EasingType.InOutElastic: return inOutElastic;
+  case EasingType.InBack: return inBack;
+  case EasingType.OutBack: return outBack;
+  case EasingType.InOutBack: return inOutBack;
+  case EasingType.InBounce: return inBounce;
+  case EasingType.OutBounce: return outBounce;
+  case EasingType.InOutBounce: return inOutBounce;
+  case EasingType.OutPow10: return outPow10;
   }
 
   return linear;

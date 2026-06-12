@@ -3,9 +3,9 @@ import { IJsonableHitStatistics } from './IJsonableHitStatistics';
 import { IScoreInfo } from './IScoreInfo';
 
 export type JsonableScoreInfo = Omit<
-// eslint-disable-next-line @typescript-eslint/indent
+// eslint-disable-next-line indent
   IScoreInfo,
-// eslint-disable-next-line @typescript-eslint/indent
+// eslint-disable-next-line indent
   'beatmap' | 'ruleset' | 'mods' | 'rawMods' | 'statistics' | 'date'
 >;
 

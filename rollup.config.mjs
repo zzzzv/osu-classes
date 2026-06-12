@@ -3,10 +3,16 @@ import externals from 'rollup-plugin-node-externals';
 import commonjs from '@rollup/plugin-commonjs';
 import dts from 'rollup-plugin-dts';
 
+const tsPluginOptions = {
+  compilerOptions: {
+    outDir: './lib',
+  },
+};
+
 export default [
   {
     plugins: [
-      typescript(),
+      typescript(tsPluginOptions),
       externals({
         deps: true,
       }),
@@ -22,7 +28,7 @@ export default [
   },
   {
     plugins: [
-      typescript(),
+      typescript(tsPluginOptions),
       externals({
         deps: true,
       }),
@@ -37,7 +43,7 @@ export default [
   },
   {
     plugins: [
-      typescript(),
+      typescript(tsPluginOptions),
       dts({
         compilerOptions: {
           removeComments: false,

@@ -232,57 +232,57 @@ export class StoryboardSprite implements IStoryboardElementWithDuration, IHasCom
     const value = command.getValueAtProgress(progress);
 
     switch (command.type) {
-      case CommandType.Movement:
-        this.startPosition.x = value.x;
-        this.startPosition.y = value.y;
-        break;
+    case CommandType.Movement:
+      this.startPosition.x = value.x;
+      this.startPosition.y = value.y;
+      break;
 
-      case CommandType.MovementX:
-        this.startPosition.x = value;
-        break;
+    case CommandType.MovementX:
+      this.startPosition.x = value;
+      break;
 
-      case CommandType.MovementY:
-        this.startPosition.y = value;
-        break;
+    case CommandType.MovementY:
+      this.startPosition.y = value;
+      break;
 
-      case CommandType.Fade:
-        this.color.alpha = value;
-        break;
+    case CommandType.Fade:
+      this.color.alpha = value;
+      break;
 
-      case CommandType.Scale:
-        this.scale.x = value;
-        this.scale.y = value;
-        break;
+    case CommandType.Scale:
+      this.scale.x = value;
+      this.scale.y = value;
+      break;
 
-      case CommandType.VectorScale:
-        this.scale.x = value.x;
-        this.scale.y = value.y;
-        break;
+    case CommandType.VectorScale:
+      this.scale.x = value.x;
+      this.scale.y = value.y;
+      break;
 
-      case CommandType.Rotation:
-        this.rotation = value;
-        break;
+    case CommandType.Rotation:
+      this.rotation = value;
+      break;
 
-      case CommandType.Color:
-        this.color.red = value.red;
-        this.color.green = value.green;
-        this.color.blue = value.blue;
-        break;
+    case CommandType.Color:
+      this.color.red = value.red;
+      this.color.green = value.green;
+      this.color.blue = value.blue;
+      break;
     }
 
     if (command.type !== CommandType.Parameter) return;
 
     switch (command.parameter) {
-      case ParameterType.BlendingMode:
-        this.isAdditive = value.rgbEquation === BlendingEquation.Add;
-        break;
+    case ParameterType.BlendingMode:
+      this.isAdditive = value.rgbEquation === BlendingEquation.Add;
+      break;
 
-      case ParameterType.HorizontalFlip:
-        this.flipX = value;
-        break;
+    case ParameterType.HorizontalFlip:
+      this.flipX = value;
+      break;
 
-      case ParameterType.VerticalFlip:
-        this.flipY = value;
+    case ParameterType.VerticalFlip:
+      this.flipY = value;
     }
   }
 }

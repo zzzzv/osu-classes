@@ -99,7 +99,12 @@ export function findIndex<T>(arr: T[], predicate: BinarySearchPredicate<T>): num
     const mid = l + ((r - l) >> 1);
     const cmp = predicate(arr[mid], mid, arr);
 
-    cmp ? (r = mid) : (l = mid);
+    if (cmp) {
+      r = mid;
+    }
+    else {
+      l = mid;
+    }
   }
 
   return r;

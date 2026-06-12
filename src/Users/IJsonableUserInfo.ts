@@ -3,9 +3,9 @@ import { IJsonableHighestRank } from './HighestRank';
 import { IUserInfo } from './IUserInfo';
 
 export type JsonableUserInfo = Omit<
-// eslint-disable-next-line @typescript-eslint/indent
+// eslint-disable-next-line indent
   IUserInfo,
-// eslint-disable-next-line @typescript-eslint/indent
+// eslint-disable-next-line indent
   'grades' | 'lastVisitAt' | 'joinedAt' | 'highestRank'
 >;
 

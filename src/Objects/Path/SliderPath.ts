@@ -260,27 +260,27 @@ export class SliderPath {
 
   private _calculateSubPath(subControlPoints: Vector2[], type: PathType): Vector2[] {
     switch (type) {
-      case PathType.Linear:
-        return PathApproximator.approximateLinear(subControlPoints);
+    case PathType.Linear:
+      return PathApproximator.approximateLinear(subControlPoints);
 
-      case PathType.PerfectCurve: {
-        if (subControlPoints.length !== 3) {
-          break;
-        }
+    case PathType.PerfectCurve: {
+      if (subControlPoints.length !== 3) {
+        break;
+      }
 
-        const subpath = PathApproximator.approximateCircularArc(subControlPoints);
+      const subpath = PathApproximator.approximateCircularArc(subControlPoints);
 
-        /**
+      /**
          * If for some reason a circular arc could not be fit to the 3 given points,
          * fall back to a numerically stable bezier approximation.
          */
-        if (subpath.length === 0) break;
+      if (subpath.length === 0) break;
 
-        return subpath;
-      }
+      return subpath;
+    }
 
-      case PathType.Catmull:
-        return PathApproximator.approximateCatmull(subControlPoints);
+    case PathType.Catmull:
+      return PathApproximator.approximateCatmull(subControlPoints);
     }
 
     return PathApproximator.approximateBezier(subControlPoints);

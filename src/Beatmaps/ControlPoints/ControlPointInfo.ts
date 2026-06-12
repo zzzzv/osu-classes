@@ -141,10 +141,10 @@ export class ControlPointInfo {
 
   getCurrentList(newPoint: ControlPoint): ControlPoint[] {
     switch (newPoint.pointType) {
-      case ControlPointType.DifficultyPoint: return this.difficultyPoints;
-      case ControlPointType.EffectPoint: return this.effectPoints;
-      case ControlPointType.SamplePoint: return this.samplePoints;
-      case ControlPointType.TimingPoint: return this.timingPoints;
+    case ControlPointType.DifficultyPoint: return this.difficultyPoints;
+    case ControlPointType.EffectPoint: return this.effectPoints;
+    case ControlPointType.SamplePoint: return this.samplePoints;
+    case ControlPointType.TimingPoint: return this.timingPoints;
     }
 
     throw new TypeError(`Unknown control point type: ${newPoint.pointType}!`);
@@ -154,20 +154,20 @@ export class ControlPointInfo {
     let existing = null;
 
     switch (newPoint.pointType) {
-      case ControlPointType.DifficultyPoint:
-        existing = this.difficultyPointAt(time);
-        break;
+    case ControlPointType.DifficultyPoint:
+      existing = this.difficultyPointAt(time);
+      break;
 
-      case ControlPointType.EffectPoint:
-        existing = this.effectPointAt(time);
-        break;
+    case ControlPointType.EffectPoint:
+      existing = this.effectPointAt(time);
+      break;
 
-      case ControlPointType.SamplePoint:
-        existing = BinarySearch.findControlPoint(this.samplePoints, time);
-        break;
+    case ControlPointType.SamplePoint:
+      existing = BinarySearch.findControlPoint(this.samplePoints, time);
+      break;
 
-      case ControlPointType.TimingPoint:
-        existing = BinarySearch.findControlPoint(this.timingPoints, time);
+    case ControlPointType.TimingPoint:
+      existing = BinarySearch.findControlPoint(this.timingPoints, time);
     }
 
     return newPoint?.isRedundant(existing);
@@ -183,20 +183,20 @@ export class ControlPointInfo {
     let list: ControlPoint[];
 
     switch (point.pointType) {
-      case ControlPointType.DifficultyPoint:
-        list = this.difficultyPoints;
-        break;
+    case ControlPointType.DifficultyPoint:
+      list = this.difficultyPoints;
+      break;
 
-      case ControlPointType.EffectPoint:
-        list = this.effectPoints;
-        break;
+    case ControlPointType.EffectPoint:
+      list = this.effectPoints;
+      break;
 
-      case ControlPointType.SamplePoint:
-        list = this.samplePoints;
-        break;
+    case ControlPointType.SamplePoint:
+      list = this.samplePoints;
+      break;
 
-      default:
-        list = this.timingPoints;
+    default:
+      list = this.timingPoints;
     }
 
     const index = list.findIndex((p) => {

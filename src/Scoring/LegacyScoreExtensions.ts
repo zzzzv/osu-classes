@@ -164,10 +164,10 @@ export abstract class LegacyScoreExtensions {
     const miss = this.countMiss;
 
     switch (this.rulesetId) {
-      case 0: return n300 + n100 + n50 + miss;
-      case 1: return n300 + n100 + n50 + miss;
-      case 2: return n300 + katu + n100 + n50 + miss;
-      case 3: return geki + n300 + katu + n100 + n50 + miss;
+    case 0: return n300 + n100 + n50 + miss;
+    case 1: return n300 + n100 + n50 + miss;
+    case 2: return n300 + katu + n100 + n50 + miss;
+    case 3: return geki + n300 + katu + n100 + n50 + miss;
     }
 
     return geki + n300 + katu + n100 + n50 + miss;
